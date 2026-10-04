@@ -52,10 +52,7 @@ export const metadata: Metadata = {
     googleBot: { index: true, follow: true, "max-image-preview": "large", "max-snippet": -1 },
   },
   formatDetection: { telephone: false, email: false, address: false },
-  // Google Search Console "HTML tag" verification — set the token in Vercel env vars.
-  ...(process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION && {
-    verification: { google: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION },
-  }),
+  verification: { google: ["P5-PyzFWiRGbG_d-hT3dO6ZdqYn9wSCgujtwa84gSpc"] },
 };
 
 export const viewport: Viewport = {
